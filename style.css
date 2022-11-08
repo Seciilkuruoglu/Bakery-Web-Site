@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+    /*yavaş geçiş*/
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 10rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: white;
+
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: rgb(48, 46, 46);
+
+}
+
+
+body {
+    background-color: #175346;
+    overflow-x: hidden;
+
+
+}
+
+
+.heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 29px;
+    margin-bottom: 2.8rem;
+    margin-top: 6rem;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-bottom: 0.1rem solid #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+.heading1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 2.8rem;
+    margin-top: -5rem;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/* header start*/
+
+.header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 80rem;
+    box-shadow: 0px 0px 17px 2px rgb(0, 0, 0, 0.75);
+    /* kutunun etrafı hafif siyahımsı gölgelendi*/
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+
+}
+.header .logo img{
+    height:10rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+
+}
+
+.header .navbar a:hover {
+    color: #772a0f;
+    font-weight: bold;
+
+}
+
+
+.header .ikon {
+    cursor: pointer;
+    /*fare işaretçisi değişir*/
+    font-size: 2.3rem;
+    margin-left: 1.8rem;
+    background-color: transparent;
+
+}
+
+
+.header .ikon i {
+    padding: 5px;
+}
+
+.ikon a {
+    color: rgba(17, 17, 17, 0.815);
+}
+
+/*header end*/
+
+
+/*section start*/
+.home {
+    min-height: 104vh;
+    background: url("https://www.kingarthurbaking.com/sites/default/files/inline-images/bake-sale.jpg") no-repeat;
+    background-size: cover;
+    /*resimi alan kadar kaplıyor otomatik*/
+    background-position: center;
+    margin-top: -16.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.home.content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    padding-top: 10%;
+    font-size: 4.5rem;
+    color: #ffffff;
+    margin-left: 110px;
+
+
+}
+
+.home .content p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: rgb(255, 254, 254);
+    margin-left: 125px;
+
+}
+
+.home .content .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1.5rem 3.0rem;
+    border-radius: 30rem;
+    color: rgb(241, 233, 233);
+    background-color: #581b28;
+    margin-left: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home .content .btn:hover {
+    opacity: 0.9;
+}
+
+
+.box-bottom .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.0rem;
+    border-radius: 10rem;
+    color: #ffffff;
+    background-color: #01221b;
+    margin-left: 100px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.box-bottom .btn:hover {
+    opacity: 0.9;
+}
+
+/*section end*/
+
+
+
+/*products start*/
+.products .box-container {
+    display: grid;
+    margin-left: 70px;
+    margin-right: 70px;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /*resimleri yan yana getiren konum*/
+    gap: 1.5rem;
+}
+
+.products .box-container .box {
+    background-color: #fff;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    flex-wrap: wrap;
+    height:55rem;
+
+}
+
+.products .box-container .box .img {
+    width: 100%;
+    object-fit: cover;
+    border-radius:3rem;
+}
+
+.products .box-container .box .products-category {
+    font-size: 18px;
+}
+
+.products .box-container .box .h3 {
+    font-size: 3rem;
+
+
+}
+
+.products .box-container .box .price {
+    font-size: 2rem;
+}
+
+.box-bottom .btn {
+    margin-left: 37%;
+}
+
+/*products end*/
+
+/*about start*/
+
+
+.headingabout {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 29px;
+    margin-bottom: 2.8rem;
+    margin-top: 7rem;
+    border-bottom: 0.1rem solid #fff;
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.about .row .image img {
+    flex: 1 1 45rem;
+    width: 35%;
+    margin-left: 6%;
+    float: left;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 15px;
+
+}
+
+
+.about .row .text {
+    flex: 1 1 45rem;
+}
+
+.about .row .text {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about .row .text h3 {
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(236, 234, 234);
+
+}
+
+.about .row .text p {
+    font-size: 18px;
+    color: rgba(236, 234, 234, 0.986);
+    margin-top: 25px;
+}
+
+.btntext {
+
+    display: inline-block;
+    padding: 1.2rem 2.0rem;
+    border-radius: 15rem;
+    color: #175346;
+    background-color: white;
+    margin-left: 1px;
+    margin-top: 45px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.btntext:hover {
+    opacity: 0.8;
+
+
+}
+
+/*about end*/
+
+/*contact start*/
+.headingcontact {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 29px;
+    margin-bottom: 2.8rem;
+    margin-top: 7.5rem;
+    border-bottom: 0.1rem solid #fff;
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+
+
+}
+
+.contact .row {
+    display: flex;
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 5%;
+}
+
+.contact .row .map {
+    width: 600px;
+    object-fit: cover;
+    height: 430px;
+
+
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    text-align: center;
+    padding-top:4rem;
+    margin-left:-9rem;
+  }
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: black;
+   text-align: center; 
+   padding-top: 40px;
+   margin-left:5rem;
+
+}
+
+.contact .row form .inputbox {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 15%;
+
+}
+
+.contact .row form .inputbox {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding-left: 50px;
+    gap: 10px;
+    
+}
+
+.contact .row form .inputbox input {
+    padding: 8px;
+    font-size: 15px;
+    width: 400px;
+
+
+}
+
+
+.btncontact {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    margin-left: 250px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin-left:5rem;
+
+}
+
+.btncontact:hover {
+    opacity: 0.9;
+
+}
+
+/*contact end*/
